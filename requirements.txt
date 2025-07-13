@@ -1,0 +1,14 @@
+telethon
+python-dotenv
+sqlalchemy
+psycopg2-binary
+dbt-postgres
+fastapi
+uvicorn
+pillow
+opencv-python
+torch
+yolov5  # if using Ultralytics YOLOv5
+dagster
+requests
+aiohttp
