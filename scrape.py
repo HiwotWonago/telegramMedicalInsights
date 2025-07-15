@@ -32,7 +32,7 @@ async def scrape_channel(channel_url, limit=100):
         async for message in client.iter_messages(entity, limit=limit):
             raw_messages.append(message.to_dict())  # preserve full raw message dict
 
-        date_str = datetime.today().strftime("%Y-%m-%d")
+        date_str = datetime.today().strftime(".venv\Scripts\activate%Y-%m-%d")
         channel_name = sanitize_filename(channel_url)
         os.makedirs(f"data/raw/telegram_messages/{date_str}", exist_ok=True)
 
