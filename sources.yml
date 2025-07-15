@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: medical_insights
+    schema: raw
+    tables:
+      - name: telegram_message
+        description: "Raw Telegram messages"
+
+      - name: image_detections
+        description: "YOLOv8 image detection results"

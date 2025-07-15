@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_channels
+    description: Dimension table with one row per Telegram channel.
+    columns:
+      - name: channel_name
+        description: The name of the Telegram channel
+        tests:
+          - not_null
+          - unique
+      - name: total_messages
+        description: Number of messages from this channel
